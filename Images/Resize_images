@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Specify the desired width and height
+WIDTH=800
+HEIGHT=600
+
+# Loop through all image files in the current directory
+for file in *.{jpg,jpeg,png,gif}; do
+    # Check if the file exists
+    if [ -e "$file" ]; then
+        # Resize the image
+        convert "$file" -resize ${WIDTH}x${HEIGHT}\> "small_$file"
+        echo "Resized $file and saved as resized_$file"
+    fi
+done

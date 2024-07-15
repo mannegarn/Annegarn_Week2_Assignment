@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 0px;
+  margin-top: 0px;
+  font-size: 8vh;
+  z-index: 1000;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+}
+
+#image_container {
+  margin-top: 10vh;
+  background-color: rgb(50, 49, 49);
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#thumbnail_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+}
+
+button {
+  background-color: black;
+  height: 10vh;
+  width: 10vh;
+}
+
+#button1 {
+  background-image: url("Images/Small_Images/small_cat1.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#button2 {
+  background-image: url("Images/Small_Images/small_cat2.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#button3 {
+  background-image: url("Images/Small_Images/small_cat3.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#button4 {
+  background-image: url("Images/Small_Images/small_cat4.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

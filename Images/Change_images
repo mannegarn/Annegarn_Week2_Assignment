@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Initialize a counter
+count=1
+
+# Loop through all image files (assuming jpg or png, adjust as necessary)
+for file in *.{jpg,jpeg}; do
+    # Check if the file exists
+    if [ -e "$file" ]; then
+        # Rename the file
+        mv "$file" "cat$count.${file##*.}"
+        echo "Renamed $file to cat$count.${file##*.}"
+        # Increment the counter
+        count=$((count + 1))
+    fi
+done
